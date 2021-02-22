@@ -2,6 +2,7 @@
 @import 'reboot';
 @import 'grid';
 @import 'colors';
+@import 'card';
 
 .attribution {
   font-size: 11px;
@@ -16,7 +17,8 @@ body p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+span {
   font-family: $font-primary;
 }
 
@@ -48,14 +50,98 @@ h4 {
   background: $light-Grayish-Magenta;
   margin-bottom: 1em;
   justify-content: space-around;
-  border-radius: 5px solid;
+  border-radius: 8px;
+  align-items: center;
   p {
     color: $very-Dark-Magenta;
     font-style: bold;
     font-family: $font-primary;
     font-size: 0.95em;
+    padding: 0.3em;
   }
 }
-.stars ul li {
-  display: inline-block;
+
+.avaliation-2 {
+  margin-left: 50px;
+}
+
+.avaliation-3 {
+  margin-left: 80px;
+}
+
+.card {
+  background: $very-Dark-Magenta;
+  height: 260px;
+  border-radius: 8px;
+  padding: 35px;
+}
+
+.card-profile img {
+  border-radius: 50%;
+  max-width: 60px;
+}
+
+.card-profile {
+  align-items: center;
+}
+
+.data-profile {
+  margin-left: 1em;
+}
+
+.data-profile h4 {
+  color: $white;
+  font-size: 1em;
+}
+
+.text-span {
+  color: $soft-Pink;
+  font-size: 0.9em;
+}
+
+.text-profile {
+  color: $white;
+  font-size: 0.8em;
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin-top: 3em;
+  }
+
+  .apresentation {
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      font-weight: 700;
+    }
+    margin-bottom: 10px;
+  }
+
+  .text-apresentation {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .avaliation {
+    width: 340px;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .avaliation-2 {
+    margin-left: 0;
+  }
+
+  .avaliation-3 {
+    margin-left: 0;
+  }
+
+  .text-review {
+    font-weight: 500;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
 }
